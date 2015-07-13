@@ -5,13 +5,21 @@
 @import "_normalize";
 @import "_skeleton";
 
+$light-blue: #3498D8;
+$dark-blue: #2C3E50;
+$blue: #2980B9;
+$red: #E74C3C;
+$white: #ECF0F1;
+
 html { font-size: 72.5%; }
 body { padding-top: 6.5rem; }
 
+.red { color: $red; }
+.blue { color: $blue; }
+.dark-blue { color: $dark-blue; }
+
 .navbar {
   background: #ffffff;
-  border-top: 1px solid #eee;
-  border-bottom: 1px solid #eee;
   left: 0;
   position: fixed;
   top: 0;
@@ -37,16 +45,52 @@ body { padding-top: 6.5rem; }
   letter-spacing: .2rem;
   margin-right: 3.0rem;
   text-decoration: none;
-  line-height: 6.5rem;
+  line-height: 6.0rem;
   color: #222;
 }
 
-.blurbs { padding-top: 8.0rem; }
-
-.blurb-heading {
-  font-weight: 600;
-  text-transform: uppercase;
+.hero {
+  padding: 6rem 0;
 }
+
+.hero-heading {
+  color: $dark-blue;
+}
+
+.hero-logo-container {
+  text-align: center;
+}
+
+.hero-logo {
+  width: 60%;
+  box-sizing: border-box;
+  position: relative;
+  top: -1rem;
+}
+
+.rocks {
+  position: relative;
+  padding: 8rem 0;
+  width: 100%;
+  height: 100%;
+  background: url('https://download.unsplash.com/35/HHEvkhEsQLaNDRkui4fg_fullsize.jpg') center center no-repeat;
+  background-size: cover;
+  color: #ffffff;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(to bottom right,$dark-blue,$blue);
+    opacity: .7;
+  }
+}
+
+.blurb-heading { color: $light-blue; }
+.footer { padding: 4rem 0; }
 
 @media only screen and (max-width: 1024px) {
 
@@ -57,7 +101,6 @@ body { padding-top: 6.5rem; }
 @media only screen and (max-width: 768px) {
 
   body { padding-top: 0; }
-  .blurbs { padding-top: 4.0rem; }
 
   .navbar-item {
     float: none;
