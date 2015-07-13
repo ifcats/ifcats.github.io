@@ -6,6 +6,7 @@
 @import "_skeleton";
 
 html { font-size: 72.5%; }
+body { padding-top: 6.5rem; }
 
 .navbar {
   background: #ffffff;
@@ -40,10 +41,23 @@ html { font-size: 72.5%; }
   color: #222;
 }
 
+.blurbs { padding-top: 8.0rem; }
+
+.blurb-heading {
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
 @media only screen and (max-width: 1024px) {
+
+  html { font-size: 66.5%; }
+
 }
 
 @media only screen and (max-width: 768px) {
+
+  body { padding-top: 0; }
+  .blurbs { padding-top: 4.0rem; }
 
   .navbar-item {
     float: none;

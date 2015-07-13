@@ -2,22 +2,32 @@
 layout: default
 ---
 
-<div class="home">
-
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
+<div class="container blurbs">
+  <div class="row">
+    <div class="one-third column">
+      <h5 class="blurb-heading">Who We Are</h5>
+      <p>
+        We are a small private Integrative Family practice. In the Springs
+        wing of Clifton Springs Hospital and Clinic, we work closely with
+        practices of massage, chiropractic, acupuncture, balneology and naturopathy.
+      </p>
+    </div>
+    <div class="one-third column">
+      <h5 class="blurb-heading">Our Approach</h5>
+      <p>
+        It is our belief that practices that have survived the centuries have
+        much to offer with conventional medical care. Our focus, not on
+        disease, but on health and wellness, integrates the best that all of
+        these practices have to offer.
+      </p>
+    </div>
+    <div class="one-third column">
+      <h5 class="blurb-heading">What We Do</h5>
+      <p>
+        We work with our patients so they have more control of the healthcare
+        they receive. Diet, exercise, environmental modifications, and even
+        pharmaceutical drugs are used to optimize health and minimize disease.
+      </p>
+    </div>
+  </div>
 </div>
