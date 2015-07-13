@@ -90,7 +90,21 @@ body { padding-top: 6.5rem; }
 }
 
 .blurb-heading { color: $light-blue; }
-.footer { padding: 4rem 0; }
+
+.footer {
+  padding: 4rem 0;
+  font-size: 1.1rem;
+  color: $dark-blue;
+ }
+
+ .footer-contact {
+   text-align: right;
+ }
+
+ .copy {
+   text-align: center;
+   padding: 1rem 0;
+}
 
 @media only screen and (max-width: 1024px) {
 
