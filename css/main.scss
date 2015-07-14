@@ -75,7 +75,7 @@ body { padding-top: 6.5rem; }
   height: 100%;
   background: url('https://download.unsplash.com/35/HHEvkhEsQLaNDRkui4fg_fullsize.jpg') center center no-repeat;
   background-size: cover;
-  color: #ffffff;
+  color: $off-white;
 
   &:before {
     content: '';
@@ -89,21 +89,22 @@ body { padding-top: 6.5rem; }
   }
 }
 
-.blurb-heading { color: $light-blue; }
+.blurb-heading { color: $blue; }
 
 .footer {
+  background-color: $off-white;
   padding: 4rem 0;
   font-size: 1.1rem;
   color: $dark-blue;
  }
 
- .footer-contact {
-   text-align: right;
- }
+.footer-contact {
+  text-align: right;
+}
 
- .copy {
-   text-align: center;
-   padding: 1rem 0;
+.copy {
+  text-align: center;
+  padding: 1rem 0;
 }
 
 @media only screen and (max-width: 1024px) {
