@@ -16,7 +16,14 @@ html {
   height: 100%;
 }
 
-body { height: 100%; }
+@media only screen and (max-width: 1024px) {
+  html { font-size: 62.5%; }
+}
+
+body {
+  color: $dark-blue;
+  height: 100%;
+ }
 
 .blue { color: $blue; }
 .dark-blue { color: $dark-blue; }
@@ -81,17 +88,8 @@ body { height: 100%; }
 /* Hero section
  **********************************************************/
 
-.hero {
-  padding: 6rem 0;
-}
-
-.hero-heading {
-  color: $dark-blue;
-}
-
-.hero-logo-container {
-  text-align: center;
-}
+.hero { padding: 6rem 0; }
+.hero-logo-container { text-align: center; }
 
 .hero-logo {
   width: 60%;
@@ -99,6 +97,17 @@ body { height: 100%; }
   position: relative;
   top: -1rem;
 }
+
+@media only screen and (max-width: 1024px) {
+  .hero-logo { width: 68%; }
+}
+
+@media only screen and (max-width: 768px) {
+  .hero-logo { top: 4rem; }
+}
+
+/* Info section
+ **********************************************************/
 
 .rocks {
   position: relative;
@@ -137,18 +146,4 @@ body { height: 100%; }
 .copy {
   text-align: center;
   padding: 1rem 0;
-}
-
-@media only screen and (max-width: 1024px) {
-
-  html { font-size: 62.5%; }
-
-  .hero-logo { width: 68%; }
-
-}
-
-@media only screen and (max-width: 768px) {
-
-  .hero-logo { top: 4rem; }
-
 }
