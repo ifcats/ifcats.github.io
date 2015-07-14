@@ -5,15 +5,25 @@
 @import "_normalize";
 @import "_skeleton";
 
+/* Color palette
+ * https://color.adobe.com/Flat-UI-color-theme-2469224/
+ **********************************************************/
+
 $blue: #2980B9;
 $dark-blue: #2C3E50;
 $light-blue: #3498D8;
 $red: #E74C3C;
 $off-white: #ECF0F1;
 
+/* Grid variables
+ **********************************************************/
+
 $tablet-max-width: 1000px;
 $phablet-max-width: 750px;
 $phone-max-width: 550px;
+
+/* General
+ **********************************************************/
 
 html {
   font-size: 72.5%;
