@@ -5,18 +5,27 @@
 @import "_normalize";
 @import "_skeleton";
 
-$light-blue: #3498D8;
-$dark-blue: #2C3E50;
 $blue: #2980B9;
+$dark-blue: #2C3E50;
+$light-blue: #3498D8;
 $red: #E74C3C;
 $off-white: #ECF0F1;
 
-html { font-size: 72.5%; }
-body { padding-top: 6.5rem; }
+html {
+  font-size: 72.5%;
+  height: 100%;
+}
 
-.red { color: $red; }
+body { height: 100%; }
+
 .blue { color: $blue; }
 .dark-blue { color: $dark-blue; }
+.light-blue { color: $light-blue; }
+.red { color: $red; }
+.off-white { color: $off-white; }
+
+/* Navbar
+ **********************************************************/
 
 .navbar {
   background: #ffffff;
@@ -25,6 +34,10 @@ body { padding-top: 6.5rem; }
   top: 0;
   width: 100%;
   z-index: 99;
+}
+
+.navbar-spacer {
+  height: 6.5rem;
 }
 
 .navbar-list {
@@ -48,6 +61,25 @@ body { padding-top: 6.5rem; }
   line-height: 6.0rem;
   color: #222;
 }
+
+@media only screen and (max-width: 768px) {
+  .navbar-item {
+    float: none;
+    border-bottom: 1px solid $off-white;
+  }
+
+  .navbar {
+    position: relative;
+    border-top: 1px solid $off-white;
+  }
+
+  .navbar-item:last-child { border-bottom: 0px; }
+  .navbar-link { line-height: 4.5rem; }
+  .navbar-spacer { display: none; }
+}
+
+/* Hero section
+ **********************************************************/
 
 .hero {
   padding: 6rem 0;
@@ -117,20 +149,6 @@ body { padding-top: 6.5rem; }
 
 @media only screen and (max-width: 768px) {
 
-  body { padding-top: 0; }
-
-  .navbar-item {
-    float: none;
-    border-bottom: 1px solid $off-white;
-  }
-
-  .navbar {
-    position: relative;
-    border-top: 1px solid $off-white;
-  }
-
-  .navbar-item:last-child { border-bottom: 0px; }
-  .navbar-link { line-height: 4.5rem; }
   .hero-logo { top: 4rem; }
 
 }
