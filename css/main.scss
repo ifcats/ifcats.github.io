@@ -12,7 +12,8 @@ $red: #E74C3C;
 $off-white: #ECF0F1;
 
 $tablet-max-width: 1000px;
-$phone-max-width: 750px;
+$phablet-max-width: 750px;
+$phone-max-width: 550px;
 
 html {
   font-size: 72.5%;
@@ -72,7 +73,7 @@ body {
   color: #222;
 }
 
-@media only screen and (max-width: $phone-max-width) {
+@media only screen and (max-width: $phablet-max-width) {
   .navbar-item {
     float: none;
     border-bottom: 1px solid $off-white;
@@ -105,7 +106,7 @@ body {
   .hero-logo { width: 68%; }
 }
 
-@media only screen and (max-width: $phone-max-width) {
+@media only screen and (max-width: $phablet-max-width) {
   .hero-logo { top: 4rem; }
 }
 
@@ -143,11 +144,13 @@ body {
   color: $dark-blue;
  }
 
-.footer-contact {
-  text-align: right;
-}
-
-.copy {
+.footer-copy {
   text-align: center;
   padding: 1rem 0;
+}
+
+.footer-contact { text-align: right; }
+
+@media only screen and (max-width: $phone-max-width) {
+  .footer-contact { text-align: left; }
 }
