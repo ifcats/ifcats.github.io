@@ -27,7 +27,12 @@ html {
 body {
   color: $dark-blue;
   height: 100%;
- }
+}
+
+.page {
+  min-height: 100%;
+  position: relative;
+}
 
 .blue { color: $blue; }
 .dark-blue { color: $dark-blue; }
@@ -139,9 +144,13 @@ body {
 
 .footer {
   background-color: $off-white;
-  padding: 4rem 0;
-  font-size: 1.1rem;
+  bottom: 0;
   color: $dark-blue;
+  font-size: 1.1rem;
+  padding: 4rem 0;
+  position: absolute;
+  width: 100%;
+  z-index: 99;
  }
 
 .footer-copy {
@@ -150,9 +159,11 @@ body {
 }
 
 .footer-contact { text-align: right; }
+.footer-spacer { height: 18.5rem; }
 
 @media only screen and (max-width: $phone-max-width) {
   .footer-contact { text-align: left; }
+  .footer-spacer { height: 23.5rem; }
 }
 
 /* Content
