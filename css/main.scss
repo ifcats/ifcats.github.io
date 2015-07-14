@@ -190,3 +190,15 @@ body {
   height: auto;
   width: 100%;
 }
+
+.profile-headshot {
+  height: 150px;
+  width: 150px;
+  border-radius: 75px;
+  border: 1px solid $light-blue;
+}
+
+.profile { text-align: center; }
+.profile-name { margin-bottom: 1rem; }
+.profile-accreditation { margin-bottom: 0; }
+.profile-bio { margin-top: 1rem; }
