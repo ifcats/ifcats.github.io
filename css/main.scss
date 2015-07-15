@@ -39,6 +39,9 @@ body {
   height: 100%;
 }
 
+a { color: $light-blue; }
+a:hover { color: $blue; }
+
 .page {
   min-height: 100%;
   position: relative;
@@ -85,7 +88,7 @@ body {
   margin-right: 3.0rem;
   text-decoration: none;
   line-height: 6.0rem;
-  color: #222;
+  color: $dark-blue;
 }
 
 @media only screen and (max-width: $phablet-max-width) {
@@ -168,12 +171,19 @@ body {
   padding: 1rem 0;
 }
 
+.footer-logo {
+  height: auto;
+  width: 4.0rem;
+}
+
+.footer-logo-container { text-align: center; }
 .footer-contact { text-align: right; }
-.footer-spacer { height: 18.5rem; }
+.footer-spacer { height: 20.2rem; }
 
 @media only screen and (max-width: $phone-max-width) {
+  .footer-logo { display: none; }
   .footer-contact { text-align: left; }
-  .footer-spacer { height: 23.5rem; }
+  .footer-spacer { height: 25.3rem; }
 }
 
 /* Content
