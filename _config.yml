@@ -1,12 +1,12 @@
 # Site settings
 title: Integrative Family Care at the Springs
-email: your-email@domain.com
+email: integrativefamilycare@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Integrative Family Care at the Springs. Taking a holistic approach to
+  medicine, involving treating the body, mind, and spirit. Naturopathy,
+  homeopathy, chinese medicine, chiropractic care, nutrition, diet, wellness.
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://yourdomain.com" # the base hostname & protocol for your site
+url: "http://ifcats.net" # the base hostname & protocol for your site
 exclude: [README.md]
 twitter_username: jekyllrb
 github_username:  jekyll
