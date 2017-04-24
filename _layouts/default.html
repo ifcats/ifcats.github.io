@@ -11,10 +11,10 @@
 
   <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
 
-  <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+  <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}?c={{site.time | date: '%s%N'}}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 
-  <link rel="icon" type="image/png" href="{{ "/img/favicon.png" | prepend: site.baseurl }}">
+  <link rel="icon" type="image/png" href="{{ "/img/favicon.png" | prepend: site.baseurl }}?c={{site.time | date: '%s%N'}}">
 
 </head>
 <body>
@@ -40,7 +40,7 @@
           </li>
           <li class="navbar-item">
             <a class="navbar-link" href="/aesthetics">
-              Aesthetics
+              IV & Aesthetics
             </a>
           </li>
           <li class="navbar-item">
