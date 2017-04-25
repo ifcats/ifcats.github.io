@@ -6,7 +6,7 @@ description: > # this means to ignore newlines until "baseurl:"
   medicine, involving treating the body, mind, and spirit. Naturopathy,
   homeopathy, chinese medicine, chiropractic care, nutrition, diet, wellness.
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://ifcats.net" # the base hostname & protocol for your site
+url: "https://www.ifcats.net" # the base hostname & protocol for your site
 exclude: [README.md, CNAME]
 twitter_username: jekyllrb
 github_username:  jekyll
