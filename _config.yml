@@ -2,11 +2,11 @@
 title: Integrative Family Care at the Springs
 email: integrativefamilycare@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Integrative Family Care at the Springs. Taking a holistic approach to
-  medicine, involving treating the body, mind, and spirit. Naturopathy,
+  Treating the body, mind, and spirit. Holistic care, naturopathy,
   homeopathy, chinese medicine, chiropractic care, nutrition, diet, wellness.
+  Serving Rochester, Syracuse, Ithaca and more.
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "https://www.ifcats.net" # the base hostname & protocol for your site
+url: "http://www.ifcats.net" # the base hostname & protocol for your site
 exclude: [README.md, CNAME]
 twitter_username: jekyllrb
 github_username:  jekyll
